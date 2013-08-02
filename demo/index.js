@@ -15,10 +15,7 @@ $(document).ready(function () {
 		}
 	});
 
-	parallax.add($("#features"))
-			.add($("#index"))
-			.add($("#boo"))
-			.add($("#sandbox"))
+	parallax.add($("#index"))
 			.add($("#me"));
 
 	parallax.background = $("body");
@@ -32,22 +29,10 @@ $(document).ready(function () {
 
 	//Setting up page navigation
 	parallax.index.onload=function(){
-		setRight("features", "Features");
-		setTop("sandbox", "SandBox");
 		setLeft("me","The Guy");
 	};
 
-	parallax.sandbox.onload=function(){
-		setBottom("index","Home");
-	};
-
-	parallax.features.onload=function(){
-		setLeft("index", "Home");
-		setRight("me", "The Guy");
-	};
-
 	parallax.me.onload=function(){
-		setLeft("features", "Features");
 		setRight("index","Home");
 	};
 
